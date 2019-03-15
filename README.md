@@ -45,26 +45,3 @@ GetData.PostRequest("appApi/getCatalogList/", params, new ApiManageCallback<List
             }
         });
 ```
-
-okhttp下载
-
-```
-GetData.download(url, new DownLoadObserver() {
-
-            @Override
-            public void onNext(DownloadInfo downloadInfo) {
-                super.onNext(downloadInfo);
-                Logger.d(downloadInfo.getProgress() + "/" + downloadInfo.getTotal());
-            }
-
-            @Override
-            public void onComplete() {
-                showSuccessToast("下载完成");
-            }
-        });
-```
-取消下载
-
-```
-DownLoadManager.getInstance().cancel(url1);
-```
