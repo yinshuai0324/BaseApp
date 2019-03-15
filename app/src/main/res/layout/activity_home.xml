@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/framLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomLayout">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/color_DFDFDF" />
+
+            <com.company.app.view.BottomToolBar
+                android:id="@+id/buttonToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                app:defaultFontColor="#000"
+                app:defaultSelect="1"
+                app:selectFontColor="@color/color_0033FF">
+
+            </com.company.app.view.BottomToolBar>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

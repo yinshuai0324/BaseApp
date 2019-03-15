@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--RecyclerView自定义属性-->
+    <declare-styleable name="BaseRecyclerView">
+        <attr name="dividerHeight" format="dimension" />
+        <attr name="dividerColor" format="color" />
+        <attr name="isTopBottomDrawline" format="boolean" />
+        <attr name="dividerMarginLeft" format="dimension" />
+        <attr name="dividerMarginRight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BottomToolBar">
+        <attr name="defaultSelect" format="integer"></attr>
+        <attr name="selectFontColor" format="color"></attr>
+        <attr name="defaultFontColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="HeaderView">
+        <attr name="header_title" format="string"></attr>
+        <attr name="header_showLine" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="DownloadButton">
+        <attr name="bgLineWidth" format="dimension"></attr>
+        <attr name="progress" format="integer"></attr>
+        <attr name="defaultText" format="string"></attr>
+        <attr name="bgStyle" format="enum">
+            <enum name="fill" value="0"></enum>
+            <enum name="line" value="1"></enum>
+        </attr>
+        <attr name="radiusBg" format="dimension"></attr>
+        <attr name="textColors" format="color"></attr>
+        <attr name="textSizes" format="dimension"></attr>
+        <attr name="progressColor" format="color"></attr>
+        <attr name="bgColor" format="color"></attr>
+        <attr name="isShowText" format="boolean"></attr>
+        <attr name="maxProgress" format="integer"></attr>
+    </declare-styleable>
+</resources>
